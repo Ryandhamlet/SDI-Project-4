@@ -130,6 +130,13 @@ console.log(lib2.fuzzyNum(10,5,50));
 console.log(lib2.fuzzyNum(5,10,50));
 console.log(lib2.strNum("7790"));
 
+console.log("Array");
+var arrayLib = library3();
+var numberList = [1,4,7,9,10,14,15];
+console.log(arrayLib.smallestNum(numberList,12));
+var randomList = [1,"pickles",3,"onions",5,"10",6,"SDI"];
+console.log(arrayLib.total(randomList));
+
 
 
 
