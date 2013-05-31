@@ -84,5 +84,43 @@ var library2 = function () {
 	};
 };
 
+// Array Questions
+var library3 = function () {
+	
+	var smallestNum = function (element,number) {
+		element.sort(function(a,b){return a-b;});
+		if (number >= element[0] && number < element[element.length-1]) {
+			element.push(number);
+			element.sort(function(a,b){return a-b;});
+			var result = element[element.lastIndexOf(number) + 1];
+			return result;
+		} else {
+			return null;
+		}
+	};
+        var total = function (element) {
+		var total = 0;
+		for (var i = 0, j = element.length; i < j; i++) {
+		if (element[i]/1 === element[i]) {
+		total += element[i];
+			}
+		}
+		return total;
+	};
+
+
+	return {
+		"smallestNum" : smallestNum,
+		"total" : total
+
+	};
+};
+
+
+
+
+
+
+
 
 
