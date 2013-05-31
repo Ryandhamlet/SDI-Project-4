@@ -117,6 +117,18 @@ var library3 = function () {
 };
 
 
+console.log("String Verification");
+console.log(verifyPhone("663-255-2238"));
+console.log(verifyURL("http://fullsail.edu"));
+
+
+
+console.log("Number");
+var lib2 = library2();
+console.log(lib2.fDeci(2.116,2));
+console.log(lib2.fuzzyNum(10,5,50));
+console.log(lib2.fuzzyNum(5,10,50));
+console.log(lib2.strNum("7790"));
 
 
 
