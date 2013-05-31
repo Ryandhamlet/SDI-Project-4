@@ -55,6 +55,34 @@ var verifyURL = function(URL){
 		}
  
 	};
+//Number Questions
+var library2 = function () {
+	
+	var fDeci = function (num,afterDeci) {
+        return Number(num.toFixed(afterDeci));
+    };
+    
+
+	var fuzzyNum = function (number,cNumber,perc) {
+		var percentage = (number/cNumber) * 100;
+		if ((number >= cNumber && percentage >= perc) || (number < cNumber && percentage < perc)) {
+			return false;
+		} else {
+			return true;
+		}
+	};
+	
+    var strNum = function (number) {
+		return Number(number);
+    
+};
+	return {
+		"fDeci" : fDeci,
+		"fuzzyNum" : fuzzyNum,
+		"strNum" : strNum
+
+	};
+};
 
 
 
