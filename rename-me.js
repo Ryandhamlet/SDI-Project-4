@@ -35,6 +35,26 @@ var	verifyPhone = function(phoneNumber){
 	}
  };
 
+// Is the string a URL (Does it start with http:// or https://) ?
+var verifyURL = function(URL){
+		var prefix1 = "http://";
+		var prefix2 = "https://";
+		var prefix3 = "www.";
+	
+		if (URL.indexOf(prefix1)===0){
+			return true;
+		}
+		if (URL.indexOf(prefix2)===0){
+			return true;
+		}
+		if (URL.indexOf(prefix3)===0){
+			return true;
+		}
+		else{
+			return false;
+		}
+ 
+	};
 
 
 
